@@ -41,3 +41,13 @@ img {
   justify-content: center;
   gap: 1em;
 }
+.photo-grid img {
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+.profile-img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
