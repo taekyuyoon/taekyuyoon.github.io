@@ -35,3 +35,9 @@ img {
   margin: 1em;
   border-radius: 8px;
 }
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
