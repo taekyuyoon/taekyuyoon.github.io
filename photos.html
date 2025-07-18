@@ -5,21 +5,6 @@
   <title>Photos – Taekyu Yoon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .photo-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      padding: 2rem 0;
-    }
-    .photo-gallery img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-  </style>
 </head>
 <body>
   <nav>
@@ -41,15 +26,17 @@
     </div>
   </header>
 
-  <main class="container photo-gallery">
-    <img src="images/photo1.jpg" alt="Photo 1">
-    <img src="images/photo2.jpg" alt="Photo 2">
-    <img src="images/photo3.jpg" alt="Photo 3">
-    <img src="images/photo4.jpg" alt="Photo 4">
-    <img src="images/photo5.jpg" alt="Photo 5">
-    <img src="images/photo6.jpg" alt="Photo 6">
-    <img src="images/photo7.jpg" alt="Photo 7">
-    <img src="images/photo8.jpg" alt="Photo 8">
+  <main class="container">
+    <div class="photo-grid">
+      <img src="photos/photo1.jpg" alt="photo1" />
+      <img src="photos/photo2.jpg" alt="photo2" />
+      <img src="photos/photo3.jpg" alt="photo3" />
+      <img src="photos/photo4.jpg" alt="photo4" />
+      <img src="photos/photo5.jpg" alt="photo5" />
+      <img src="photos/photo6.jpg" alt="photo6" />
+      <img src="photos/photo7.jpg" alt="photo7" />
+      <img src="photos/photo8.jpg" alt="photo8" />
+    </div>
   </main>
 
   <footer>
