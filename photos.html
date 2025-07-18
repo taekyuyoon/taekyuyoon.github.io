@@ -10,7 +10,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 16px;
-      padding: 40px 20px;
+      padding: 40px 0;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -19,68 +19,14 @@
       width: 100%;
       height: auto;
       object-fit: cover;
+      border: 1px solid #ccc;
       border-radius: 4px;
-    }
-
-    .hero-subpage {
-      background-color: #000;
-      color: #fff;
-      padding: 100px 0;
-      text-align: center;
-    }
-
-    .center-text {
-      text-align: center;
-    }
-
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0.9em;
-    }
-
-    nav {
-      background-color: #000;
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1em;
-    }
-
-    .logo {
-      color: #fff;
-      font-weight: bold;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1em;
-    }
-
-    .nav-links a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .nav-links a:hover,
-    .nav-links .active {
-      text-decoration: underline;
     }
   </style>
 </head>
-
 <body>
   <nav>
-    <div class="nav-container">
+    <div class="container nav-container">
       <div class="logo">Taekyu Yoon</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -92,28 +38,30 @@
     </div>
   </nav>
 
-  <header class="hero-subpage">
+  <header class="hero-subpage dark-theme">
     <div class="container center-text">
       <h1>Photos</h1>
     </div>
   </header>
 
-  <main>
+  <main class="section">
     <div class="photo-gallery">
-      <img src="images/photo1.jpg" alt="photo1">
-      <img src="images/photo2.jpg" alt="photo2">
-      <img src="images/photo3.jpg" alt="photo3">
-      <img src="images/photo4.jpg" alt="photo4">
-      <img src="images/photo5.jpg" alt="photo5">
-      <img src="images/photo6.jpg" alt="photo6">
-      <img src="images/photo7.jpg" alt="photo7">
-      <img src="images/photo8.jpg" alt="photo8">
-      <img src="images/photo9.jpg" alt="photo9">
+      <img src="images/photo1.jpg" alt="photo1" />
+      <img src="images/photo2.jpg" alt="photo2" />
+      <img src="images/photo3.jpg" alt="photo3" />
+      <img src="images/photo4.jpg" alt="photo4" />
+      <img src="images/photo5.jpg" alt="photo5" />
+      <img src="images/photo6.jpg" alt="photo6" />
+      <img src="images/photo7.jpg" alt="photo7" />
+      <img src="images/photo8.jpg" alt="photo8" />
+      <img src="images/photo9.jpg" alt="photo9" />
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Taekyu Yoon. All rights reserved.
+    <div class="container center-text">
+      &copy; 2025 Taekyu Yoon. All rights reserved.
+    </div>
   </footer>
 </body>
 </html>
