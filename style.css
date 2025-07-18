@@ -89,3 +89,20 @@ footer {
   background-color: #f9f9f9;
   padding: 4px;
 }
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 1em 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.8em;
+  }
+
+  .nav-links a {
+    font-size: 0.9em;
+  }
+}
