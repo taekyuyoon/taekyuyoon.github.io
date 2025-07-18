@@ -1,123 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Taekyu Yoon, 윤태규, 작곡가 윤태규, 현대음악, 한양대학교, 라이프치히, 만하임, Mannheim, Leipzig, Musikhochschule, 음악대학, 작곡과, Komposition, Neue Musik, new media, Neue Medien">
-    <meta name="description" content="Official website of composer Taekyu Yoon (윤태규)">
-    <title>Photos | Taekyu Yoon</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .photo-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+  <meta charset="UTF-8" />
+  <title>Photos – Taekyu Yoon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .photo-gallery img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+    .photo-gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 4px;
+    }
 
-        h2 {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 2.5em;
-        }
+    .hero-subpage {
+      background-color: #000;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
 
-        header {
-            background-color: black;
-            color: white;
-            padding: 20px 0;
-        }
+    .center-text {
+      text-align: center;
+    }
 
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9em;
+    }
 
-        .logo {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
+    nav {
+      background-color: #000;
+    }
 
-        nav ul.nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            padding: 0;
-            margin: 0;
-        }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+    }
 
-        nav ul.nav-links li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .logo {
+      color: #fff;
+      font-weight: bold;
+    }
 
-        nav ul.nav-links li a.active {
-            text-decoration: underline;
-        }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+    }
 
-        footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 60px;
-        }
-    </style>
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
-<header class="hero-subpage dark-theme" style="padding: 100px 0;">
-  <div class="container center-text">
-    <h1>Photos</h1>
-  </div>
-</header>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Taekyu Yoon</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="photos.html" class="active">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-            <div class="logo">Taekyu Yoon</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="photos.html" class="active">Photos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="hero-subpage">
+    <div class="container center-text">
+      <h1>Photos</h1>
+    </div>
+  </header>
 
-    <main>
-        <h2>Photos</h2>
-        <div class="photo-gallery">
-            <img src="images/photo1.jpg" alt="photo1">
-            <img src="images/photo2.jpg" alt="photo2">
-            <img src="images/photo3.jpg" alt="photo3">
-            <img src="images/photo4.jpg" alt="photo4">
-            <img src="images/photo5.jpg" alt="photo5">
-            <img src="images/photo6.jpg" alt="photo6">
-            <img src="images/photo7.jpg" alt="photo7">
-            <img src="images/photo8.jpg" alt="photo8">
-            <img src="images/photo9.jpg" alt="photo9">
-        </div>
-    </main>
+  <main>
+    <div class="photo-gallery">
+      <img src="images/photo1.jpg" alt="photo1">
+      <img src="images/photo2.jpg" alt="photo2">
+      <img src="images/photo3.jpg" alt="photo3">
+      <img src="images/photo4.jpg" alt="photo4">
+      <img src="images/photo5.jpg" alt="photo5">
+      <img src="images/photo6.jpg" alt="photo6">
+      <img src="images/photo7.jpg" alt="photo7">
+      <img src="images/photo8.jpg" alt="photo8">
+      <img src="images/photo9.jpg" alt="photo9">
+    </div>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Taekyu Yoon. All rights reserved.</p>
-    </footer>
+  <footer>
+    &copy; 2025 Taekyu Yoon. All rights reserved.
+  </footer>
 </body>
-
 </html>
