@@ -20,7 +20,7 @@ body {
 nav {
   background-color: #fff;
   border-bottom: 1px solid #eee;
-  padding: 1rem 0;
+  padding: 2rem 0;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -34,53 +34,65 @@ nav {
 
 .logo {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 2rem;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #111;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
 
-header#home {
-  padding: 6rem 0;
-  background-color: #f9f9f9;
-}
-
-.center-text {
+header.hero {
+  padding: 8rem 2rem;
+  background-color: #111;
+  color: #fff;
   text-align: center;
 }
 
-.lead {
-  font-size: 1.1rem;
-  margin: 1.5rem 0;
+header.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 .button {
-  padding: 0.6rem 1.2rem;
-  background-color: #111;
-  color: white;
+  padding: 0.6rem 1.4rem;
+  background-color: #fff;
+  color: #111;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 .button:hover {
-  background-color: #333;
+  background-color: #eee;
 }
 
 .section {
   padding: 4rem 0;
+}
+
+.bio-note {
+  margin-top: 2rem;
+  font-style: italic;
+  opacity: 0.9;
 }
 
 footer {
@@ -88,4 +100,5 @@ footer {
   padding: 2rem 0;
   border-top: 1px solid #eee;
   font-size: 0.9rem;
+  text-align: center;
 }
