@@ -60,9 +60,9 @@ nav {
   color: #555;
 }
 
-/* Hero Section for home and subpages */
+/* Hero Section for Home */
 .hero-home {
-  background-color: #000;
+  background-color: #000 !important;
   color: #fff;
   padding: 160px 20px;
   text-align: center;
