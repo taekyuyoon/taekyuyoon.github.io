@@ -133,7 +133,7 @@ nav {
 .home-hero h1 {
   max-width: 680px;
   margin: 0;
-  font-size: clamp(2.85rem, 6.6vw, 5.7rem);
+  font-size: clamp(2.5rem, 5.4vw, 4.6rem);
   line-height: 1;
   letter-spacing: 0;
 }
