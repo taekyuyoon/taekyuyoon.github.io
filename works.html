@@ -6,49 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    .works-list {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    .works-list li {
-      margin-bottom: 0.7em;
-      font-size: 1.1em;
-    }
-
-    .youtube-icon {
-      margin-left: 10px;
-      color: red;
-    }
-
-    .youtube-icon:hover {
-      color: darkred;
-    }
-  </style>
 </head>
 <body>
   <nav>
     <div class="container nav-container">
-      <div class="logo">Taekyu Yoon</div>
+      <a class="logo" href="index.html" aria-label="Taekyu Yoon home">Taekyu Yoon</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="works.html" class="active">Works</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a href="photos.html">Photos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="hero-subpage">
-    <div class="container center-text">
+  <header class="hero-subpage hero-works">
+    <div class="container">
+      <p class="eyebrow">Catalogue</p>
       <h1>Selected Works</h1>
-      <p>with YouTube recordings (click the icon)</p>
+      <p>Orchestra, ensemble, solo, voice, and electronic works with selected recordings.</p>
     </div>
   </header>
 
-  <main class="container section" style="padding: 3rem 0;">
+  <main class="container works-page">
     <section>
       <h2>Orchestra</h2>
       <ul class="works-list">
@@ -159,4 +141,3 @@
   </footer>
 </body>
 </html>
-
