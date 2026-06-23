@@ -106,7 +106,7 @@ nav {
   background:
     linear-gradient(90deg, rgba(12, 13, 15, 0.9) 0%, rgba(12, 13, 15, 0.62) 48%, rgba(12, 13, 15, 0.24) 100%),
     linear-gradient(0deg, rgba(12, 13, 15, 0.65) 0%, rgba(12, 13, 15, 0.08) 46%),
-    url("images/photo7.jpg") center / cover;
+    url("images/photo11.jpg") center / cover;
   transform: scale(1.02);
 }
 
@@ -404,10 +404,14 @@ nav {
 
 .hero-home,
 .hero-subpage {
-  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(22, 22, 22, 0.88), rgba(22, 22, 22, 0.34)),
+    var(--subpage-image, url("images/photo3.jpg")) center / cover;
   color: var(--white);
-  padding: 100px 0;
-  text-align: center;
+  padding: 7rem 0 4.5rem;
+  text-align: left;
 }
 
 .hero-home h1,
@@ -415,6 +419,160 @@ nav {
   margin: 0 0 0.5rem;
   font-size: clamp(2.4rem, 5vw, 4rem);
   line-height: 1.05;
+}
+
+.hero-subpage p {
+  max-width: 680px;
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.1rem;
+}
+
+.hero-about {
+  --subpage-image: url("images/photo1.jpg");
+}
+
+.hero-works {
+  --subpage-image: url("images/photo10.jpg");
+}
+
+.hero-photos {
+  --subpage-image: url("images/photo4.jpg");
+}
+
+.hero-events {
+  --subpage-image: url("images/photo9.jpg");
+}
+
+.hero-contact {
+  --subpage-image: url("images/photo15.jpg");
+}
+
+.bio-section,
+.works-page,
+.contact-page,
+.events-page {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+.bio-section h2,
+.works-page h2,
+.contact-page h2,
+.events-page h2 {
+  margin-top: 2rem;
+}
+
+.bio-section h2:first-child,
+.works-page h2:first-child,
+.contact-page h2:first-child,
+.events-page h2:first-child {
+  margin-top: 0;
+}
+
+.works-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.works-list li {
+  margin-bottom: 0.7em;
+  font-size: 1.05em;
+}
+
+.youtube-icon {
+  margin-left: 10px;
+  color: #c9412f;
+}
+
+.youtube-icon:hover {
+  color: #8f2d20;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  padding: 40px 0;
+}
+
+.photo-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.event-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.event-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 1.2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.event-date {
+  color: var(--copper);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.event-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.event-card p {
+  margin: 0.25rem 0;
+  color: var(--muted);
+}
+
+.event-note {
+  margin-top: 2rem;
+  color: var(--muted);
+}
+
+.contact-links {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  font-weight: 700;
+}
+
+.contact-links i {
+  margin-right: 0.6rem;
+  color: var(--copper);
 }
 
 footer {
@@ -465,6 +623,10 @@ footer {
 
   .image-mosaic {
     grid-template-rows: 160px 160px;
+  }
+
+  .event-card {
+    grid-template-columns: 1fr;
   }
 }
 
