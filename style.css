@@ -131,10 +131,10 @@ nav {
 }
 
 .home-hero h1 {
-  max-width: 760px;
+  max-width: 680px;
   margin: 0;
-  font-size: clamp(3.2rem, 8vw, 7rem);
-  line-height: 0.92;
+  font-size: clamp(2.85rem, 6.6vw, 5.7rem);
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -408,7 +408,7 @@ nav {
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(22, 22, 22, 0.88), rgba(22, 22, 22, 0.34)),
-    var(--subpage-image, url("images/photo3.jpg")) center / cover;
+    var(--subpage-image, url("images/photo3.jpg")) var(--subpage-position, center 52%) / cover;
   color: var(--white);
   padding: 7rem 0 4.5rem;
   text-align: left;
@@ -430,22 +430,27 @@ nav {
 
 .hero-about {
   --subpage-image: url("images/photo1.jpg");
+  --subpage-position: center 62%;
 }
 
 .hero-works {
-  --subpage-image: url("images/photo10.jpg");
+  --subpage-image: url("images/photo12.jpg");
+  --subpage-position: center 74%;
 }
 
 .hero-photos {
   --subpage-image: url("images/photo4.jpg");
+  --subpage-position: center 64%;
 }
 
 .hero-events {
   --subpage-image: url("images/photo9.jpg");
+  --subpage-position: center 60%;
 }
 
 .hero-contact {
-  --subpage-image: url("images/photo15.jpg");
+  --subpage-image: url("images/photo8.jpg");
+  --subpage-position: center 56%;
 }
 
 .bio-section,
@@ -641,7 +646,9 @@ footer {
   }
 
   .home-hero h1 {
-    font-size: 3rem;
+    max-width: 420px;
+    font-size: 2.45rem;
+    line-height: 1.04;
   }
 
   .hero-lede {
