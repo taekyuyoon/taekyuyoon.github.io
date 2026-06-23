@@ -429,8 +429,8 @@ nav {
 }
 
 .hero-about {
-  --subpage-image: url("images/photo1.jpg");
-  --subpage-position: center 62%;
+  --subpage-image: url("images/photo7.jpg");
+  --subpage-position: center 74%;
 }
 
 .hero-works {
@@ -444,8 +444,8 @@ nav {
 }
 
 .hero-events {
-  --subpage-image: url("images/photo9.jpg");
-  --subpage-position: center 60%;
+  --subpage-image: url("images/photo5.jpg");
+  --subpage-position: center 56%;
 }
 
 .hero-contact {
