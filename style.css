@@ -720,14 +720,3 @@ footer {
     grid-row: auto;
   }
 }
-/* ===== FONT SIZE GLOBAL OVERRIDE ===== */
-
-html {
-    font-size: 90%;
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 85%;
-    }
-}
