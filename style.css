@@ -479,6 +479,41 @@ nav {
   margin-top: 0;
 }
 
+.language-tabs {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-bottom: 2rem;
+  padding: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.language-tabs button {
+  min-width: 56px;
+  min-height: 38px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.language-tabs button.active {
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.bio-panel[hidden] {
+  display: none;
+}
+
+.bio-panel h2 {
+  margin-top: 0;
+}
+
 .works-list {
   list-style-type: none;
   padding-left: 0;
@@ -647,7 +682,7 @@ footer {
 
   .home-hero h1 {
     max-width: 420px;
-    font-size: 2.45rem;
+    font-size: 2.1rem;
     line-height: 1.04;
   }
 
