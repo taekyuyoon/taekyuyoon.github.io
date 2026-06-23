@@ -311,10 +311,11 @@ nav {
 }
 
 .search-profile {
-  max-width: 900px;
+  max-width: 1180px;
 }
 
 .search-profile p:not(.eyebrow) {
+  max-width: 980px;
   color: var(--muted);
   font-size: 1.08rem;
   line-height: 1.9;
