@@ -5,46 +5,31 @@
   <title>Photos – Taekyu Yoon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .photo-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      padding: 40px 0;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .photo-gallery img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-  </style>
 </head>
 <body>
   <nav>
     <div class="container nav-container">
-      <div class="logo">Taekyu Yoon</div>
+      <a class="logo" href="index.html" aria-label="Taekyu Yoon home">Taekyu Yoon</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="works.html">Works</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a href="photos.html" class="active">Photos</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="hero-subpage dark-theme">
-    <div class="container center-text">
+  <header class="hero-subpage hero-photos">
+    <div class="container">
+      <p class="eyebrow">Archive</p>
       <h1>Photos</h1>
+      <p>Selected documentation from concerts, rehearsals, collaborations, and media work.</p>
     </div>
   </header>
 
-  <main class="section">
+  <main class="container section">
     <div class="photo-gallery">
       <img src="images/photo1.jpg" alt="photo1" />
       <img src="images/photo2.jpg" alt="photo2" />
