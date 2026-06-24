@@ -312,6 +312,34 @@ nav {
   color: var(--white);
 }
 
+.video-card {
+  gap: 1.05rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.video-card img {
+  width: calc(100% + 2.8rem);
+  max-width: none;
+  margin: -1.4rem -1.4rem 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-card::after {
+  content: "Watch on YouTube";
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 0.4rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.video-card.emphasized::after {
+  color: var(--white);
+}
+
 .search-profile {
   max-width: 1180px;
 }
