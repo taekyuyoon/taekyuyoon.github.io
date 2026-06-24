@@ -763,3 +763,42 @@ footer {
 .work-card h3 {
     font-size: 1.15rem !important;
 }
+/* ===== FIX HOME PROFILE IMAGE SIZE ===== */
+
+.portrait-panel {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portrait-panel img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Awards section layout */
+.Awards-section {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .Awards-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .portrait-panel {
+    max-width: 240px;
+  }
+
+  .portrait-panel img {
+    max-width: 240px;
+  }
+}
