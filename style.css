@@ -352,8 +352,8 @@ nav {
 }
 
 .media-section {
-  background: var(--charcoal);
-  color: var(--white);
+  background: var(--white);
+  color: var(--ink);
   padding: 5.5rem 0;
 }
 
@@ -366,14 +366,14 @@ nav {
 
 .media-copy p:not(.eyebrow) {
   max-width: 560px;
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
   font-size: 1.05rem;
 }
 
 .text-link {
   display: inline-flex;
   margin-top: 0.7rem;
-  color: #e6b196;
+  color: var(--blue);
   font-weight: 700;
 }
 
@@ -847,6 +847,34 @@ footer {
   grid-template-columns: minmax(220px, 320px) 1fr;
   gap: 3rem;
   align-items: center;
+  max-width: none;
+  padding-right: max(28px, calc((100vw - 1180px) / 2 + 28px));
+  padding-left: max(28px, calc((100vw - 1180px) / 2 + 28px));
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.Awards-section .eyebrow {
+  color: #e6b196;
+}
+
+.Awards-copy h2 {
+  max-width: 760px;
+  color: var(--white);
+}
+
+.Awards-list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.Awards-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 0.9rem;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 /* ===== HOME INTRO SPACING AND READABILITY ===== */
