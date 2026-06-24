@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#171717"/>
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#c06d4a" stroke-width="18"/>
+  <text
+    x="256"
+    y="340"
+    text-anchor="middle"
+    font-family="Apple Symbols, Segoe UI Symbol, Noto Music, serif"
+    font-size="318"
+    font-weight="400"
+    fill="#f7f1ea">&#119070;</text>
+</svg>
