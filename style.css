@@ -139,6 +139,8 @@ nav {
 }
 
 .home-hero h1 span {
+  display: inline-block;
+  margin-top: 0.08em;
   color: #e7ded0;
 }
 
@@ -763,6 +765,14 @@ footer {
 
 .work-card h3 {
   font-size: 1.15rem !important;
+}
+
+/* ===== HOME HERO FRAMING ===== */
+
+@media (min-width: 861px) {
+  .hero-content {
+    padding-left: clamp(2.5rem, 8vw, 8rem);
+  }
 }
 
 /* ===== FIX HOME PROFILE IMAGE SIZE ===== */
