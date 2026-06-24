@@ -458,7 +458,9 @@ nav {
 
 .hero-events {
   --subpage-image: url("images/photo5.jpg");
-  --subpage-position: center 56%;
+  --subpage-position: center 50%;
+  padding-top: 8.5rem;
+  padding-bottom: 6rem;
 }
 
 .hero-contact {
