@@ -720,49 +720,51 @@ footer {
     grid-row: auto;
   }
 }
+
 /* ===== HOME ONLY FONT SIZE ===== */
 
 .home-hero h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
 }
 
 .hero-lede {
-    font-size: 0.95rem !important;
+  font-size: 0.95rem !important;
 }
 
 .statement-band p {
-    font-size: 0.92rem !important;
+  font-size: 0.92rem !important;
 }
 
 .quick-facts dt {
-    font-size: 0.75rem !important;
+  font-size: 0.75rem !important;
 }
 
 .quick-facts dd {
-    font-size: 0.9rem !important;
+  font-size: 0.9rem !important;
 }
 
 .search-profile p {
-    font-size: 0.92rem !important;
+  font-size: 0.92rem !important;
 }
 
 .featured-section p,
 .media-section p,
 .recognition-section p,
 .closing-cta p {
-    font-size: 0.92rem !important;
+  font-size: 0.92rem !important;
 }
 
 .featured-section h2,
 .media-section h2,
 .recognition-section h2,
 .closing-cta h2 {
-    font-size: 1.6rem !important;
+  font-size: 1.6rem !important;
 }
 
 .work-card h3 {
-    font-size: 1.15rem !important;
+  font-size: 1.15rem !important;
 }
+
 /* ===== FIX HOME PROFILE IMAGE SIZE ===== */
 
 .portrait-panel {
@@ -786,6 +788,30 @@ footer {
   grid-template-columns: minmax(220px, 320px) 1fr;
   gap: 3rem;
   align-items: center;
+}
+
+/* ===== HOME INTRO SPACING AND READABILITY ===== */
+
+.statement-grid > p {
+  font-size: clamp(1.15rem, 1.9vw, 1.55rem) !important;
+  line-height: 1.48;
+}
+
+@media (max-width: 860px) {
+  .statement-grid {
+    padding-top: 3.4rem;
+    padding-bottom: 3rem;
+    gap: 1.8rem;
+  }
+
+  .hero-actions {
+    margin-bottom: 1.4rem;
+  }
+
+  .statement-grid > p {
+    font-size: 1.08rem !important;
+    line-height: 1.48;
+  }
 }
 
 @media (max-width: 768px) {
