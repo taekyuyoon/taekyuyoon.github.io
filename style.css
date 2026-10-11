@@ -915,3 +915,10 @@ footer {
     max-width: 240px;
   }
 }
+.video-card {
+  justify-content: flex-start;
+}
+
+.video-card::after {
+  margin-top: auto;
+}
